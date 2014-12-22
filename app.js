@@ -3,7 +3,7 @@ var express = require("express"),
   ejs = require("ejs");
   lodash = require("lodash");
   pg = require("pg");
-  morgan = require("morgan"); 
+  morgan = require("morgan");
   bodyParser = require("body-parser");
   methodOverride = require("method-override");
 

@@ -14,20 +14,28 @@
 
 <script src="imgLiquid.min.js"></script>
 
-  <script>
+<script>
   $(document).ready(function() {
     $(".imgLiquidFill").imgLiquid({
       fill: true,
       horizontalAlign: "center",
     });
   });
+</script>
 
-  function setDimensions(){
+<script>
+function setDimensions(){
    var windowsHeight = $(window).height();
-   $('.content-full').css('height', windowsHeight + 'px');
+   $('.middle').css('height', windowsHeight + 'px');;
+}
 
-  }
-  </script>
+//when resizing the site, we adjust the heights of the sections
+$(window).resize(function() {
+    setDimensions();
+});
+
+setDimensions();
+</script>
 
 </body>
 </html>
