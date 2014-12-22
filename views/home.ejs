@@ -3,6 +3,7 @@
     We position the images fixed and therefore need to place them outside of #skrollr-body.
     We will then use data-anchor-target to display the correct image matching the current section (.gap element).
   -->
+<!-- <div class="container"> -->
 
   <div
     class="parallax-image-wrapper parallax-image-wrapper-100"
@@ -20,9 +21,9 @@
     <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
   </div>
 
-
+<!--
   <div
-    class="parallax-image-wrapper parallax-image-wrapper-100"
+    class="parallax-image-wrapper parallax-image-wrappesr-100"
     data-anchor-target="#middle_img + .gap"
     data-bottom-top="transform:translate3d(0px, 200%, 0px)"
     data-top-bottom="transform:translate3d(0px, 0%, 0px)">
@@ -35,19 +36,19 @@
     data-top-bottom="transform: translate3d(0px, 80%, 0px);"
   ></div>
   </div>
-
+ -->
   <div
     class="parallax-image-wrapper parallax-image-wrapper-50"
     data-anchor-target="#last_img + .gap"
-    data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
     data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
   <div
     class="parallax-image parallax-image-50"
     style="background-image:url(images/sunset.jpg)"
     data-anchor-target="#last_img + .gap"
-    data-bottom-top="transform: translate3d(0px, -70%, 0px);"
-    data-top-bottom="transform: translate3d(0px, 70%, 0px);"
+    data-bottom-top="transform: translate3d(0px, -25%, 0px);"
+    data-top-bottom="transform: translate3d(0px, 25%, 0px);"
   ></div>
   </div>
 
@@ -71,51 +72,55 @@
       I have over 3 years of experience in media, marketing, and online advertising. I recently graduated from General Assembly after taking their Wed Development Immersice. My goal is to design and build awesome websites and apps.<br>
   </div>
 
-  <div class="content content-full" id="middle_img">
+  <div class="content-full col-lg-12" id="middle_img">
+    <h1>Websites/Projects</h1>
 
-    <h1>My Projects</h1>
-
-      <div class="box col-md-4 col-sm-12 icon1">
-        <!-- <img alt="Oneironaut" src="images/oneironaut_site.png" /> -->
-        <h2>Oneironaut</h2>
-          <h3>For those interested in exploring the dream world, Oneironaut was an idea I had because I was upset with the quality of the current dream websites of today. With over __ active users, I plan on expanding, promoting, and utilizing my marketing skills to reach even more users.
-          </h3>
+      <div class="projects col-md-3 col-sm-12 project1">
+        <div class="box icon1">
+          <h2><a href="http://www.oneironaut.herokuapp.com">Oneironaut</a></h2>
+            <h3>For those interested in exploring the dream world, Oneironaut was an idea I had because I was upset with the quality of the current dream websites of today. I plan on expanding, promoting, and utilizing my marketing skills to reach even more users.
+            </h3>
+        </div>
       </div>
 
-      <div class="box col-md-4 col-sm-12 icon2">
-        <!-- <img alt="Vex" src="images/vexillology.png" /> -->
-        <h2>Vex-on</h2>
-          <h3>
-          Another website I created because of the poor quality of current flag websites, I decided to make this website look beautiful as well as accessible to anybody wanting to learn about flags, their history, or just admire the colors and design of flags from around the world.
-          </h3>
+      <div class="projects col-md-3 col-sm-12 project2">
+        <div class="box">
+          <h2>Vex-on</h2>
+            <h3>
+            Another website I created because of the poor quality of current flag websites, I decided to make this website look beautiful as well as accessible to anybody wanting to learn about flags, their history, or just admire the colors and design of flags from around the world.</h3>
+        </div>
       </div>
 
-      <div class="box col-md-4 col-sm-12 icon3">
-        <!-- <img alt="Moonwalk" src="images/moonwalk.png" /> -->
+
+
+      <div class="projects col-md-3 col-sm-12 project3">
+        div.
         <h2>Moonwalk</h2>
           <h3>
-          Moonwalk was built with the idea that we could use the data of Craigslist to provide raw data and information regarding the rental averages in major cities as well as figure out if buying a property for rental purposes was worth it. <br>
+          Moonwalk was built with the idea that we could use the data of Craigslist to provide raw data and information regarding the rental averages in major cities as well as figure out if buying a property for rental purposes was worth it. <br><br>
           I was primarily in charge of web scraping so, I used Nokogiri to scrape Craiglist data, found the average rent based on the number of bedrooms, and relayed that information to the website.
           </h3>
       </div>
 
-<!--       <div class="box col-md-3 col-sm-6 imgLiquidFill imgLiquid">
-        <h2>Kaizen</h2>
+      <div class="projects col-md-3 col-sm-12 project4">
+        <h2>MishMash</h2>
           <h3>
           Tired of not knowing where to find your art? Want to get a tattoo, but unsure of where to start looking? Do you wish you could sell your face-to-face services? Well, that's what Local
           </h3>
       </div>
- -->
+
   </div>
 
-  <div class="gap gap-100" style="background-image:url(images/northern_pakistan.jpg);"></div>
+
+<!--   <div class="gap gap-50" style="background-image:url(images/northern_pakistan.jpg);"></div> -->
   <div class="content content-full" id="last_img">
-    Here be last_img!!
   </div>
+
   <div class="gap gap-100" style="background-image:url(images/sunset.jpg);"></div>
   <div class="content" id="done">
     Feel free to contact via <a href="mailto:cjhunjhnuwala@gmail.com">email.</a>
   </div>
+
 </div>
 
 <% include partials/footer %>
